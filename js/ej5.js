@@ -12,7 +12,23 @@ Ejemplo:
 Input:  40773821 
 Output: ‘L’
 */
+let calculo = 0;
 
+while (true) {
+  let dni = prompt("Indique su DNI:");
 
+  if (dni > 0 || dni < 99999999) {
+    break;
+  }
 
+  let resultado = parseFloat(dni);
 
+  if (isNaN(resultado)) {
+    alert(`Por favor indique un numeros valido, indicó: ${resultado}`);
+    continue;
+  }
+
+  calculo = resultado % 23;
+}
+
+alert("El numero para calcular la letra es: " + calculo);
