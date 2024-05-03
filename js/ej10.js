@@ -5,16 +5,16 @@ Ejercicios con Math
 let filas = prompt("Indique un número de filas:");
 let columnas = prompt("Indique un número de columnas:");
 
-if (isNaN(filas) || filas === '' || isNaN(columnas) || columnas === '') 
+if (isNaN(filas) || filas === null || isNaN(columnas) || columnas === null ) 
     alert('Por favor, introduce un número válido');
-    if else {
-
-for (let i = 1; i <= filas; i++) {
-    document.write(i + <br />);
-}
-}
-else {
-for (let j = 1; j <= columnas; j++) {
-    document.write(j + <br />);
-}
-}
+    else {
+        let contador = filas * columnas;
+        for (let i = 1; i <= filas; i++) {
+            let fila = "";
+            for (let j = 1; j <= columnas; j++) {
+                fila += contador + "\t";
+                contador--;
+            }
+            console.log(fila);
+        }
+    }

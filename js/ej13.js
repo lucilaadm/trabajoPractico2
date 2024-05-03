@@ -5,4 +5,4 @@
 let texto = prompt("Indique un texto");
 let textoMayuscula = texto.toUpperCase();
 
-alert(`Su texto indicado ha sido: ${textoMayuscula}`);
+alert(`Su texto indicado transformado en mayusculas ha sido: ${textoMayuscula}`);

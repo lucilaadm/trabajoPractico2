@@ -1,14 +1,9 @@
 /*15- Realiza un script que cuente el número de vocales que tiene un texto.
  */
 
-let cadena = prompt ("Ingrese texto:")
-
-//let cadena = `Acá no hay agüita`;
-
+let cadena = prompt("Ingrese texto:"); //`Acá no hay agüita`;
 let resultado = 0;
-
 cadena = cadena.toLowerCase();
-
 for (let i = 0; i < cadena.length; i++) {
   if (
     cadena.at(i) === "a" ||
@@ -24,8 +19,6 @@ for (let i = 0; i < cadena.length; i++) {
     cadena.at(i) === "ü"
   ) {
     resultado++;
-  }
-else {
-    alert ("No ingresaste ninguna vocal")}
+  } 
 }
 alert(`Ingresaste ${resultado} vocales`);
