@@ -11,15 +11,14 @@
 */
 let numeros = prompt("Indique un número entre 1 y 50:");
 
-if (isNaN(numeros) || numeros === '' || numeros < 1 || numeros > 50) 
-    alert('Por favor, introduce un número válido entre 1 y 50.');
-    else {
-
-for (let i = 1; i <= numeros; i++) {
-    let linea = '';
-  for (let j = 1; j <= i; j++) {
-    linea = linea + j;
+if (isNaN(numeros) || numeros === "" || numeros < 1 || numeros > 50)
+  alert("Por favor, introduce un número válido entre 1 y 50.");
+else {
+  for (let i = 1; i <= numeros; i++) {
+    let linea = "";
+    for (let j = 1; j <= i; j++) {
+      linea = linea + j;
+    }
+    console.log(linea);
   }
-  document.write(linea + <br />);
-}
 }

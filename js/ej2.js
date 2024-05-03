@@ -25,8 +25,7 @@ let notaEj2 = parseInt(
 
 if (isNaN(notaEj2)) {
   alert("No has ingresado un número");
-}
-if (notaEj2 >= 0 && notaEj2 <= 2) {
+} else if (notaEj2 >= 0 && notaEj2 <= 2) {
   alert("Tu calificación fue muy deficiente");
 } else if (notaEj2 >= 3 && notaEj2 <= 4) {
   alert("Tu calificación fue muy insuficiente");

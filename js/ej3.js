@@ -6,7 +6,7 @@
   let chistes = " ";
 
 do {
-  let texto = prompt("Indique un texto");
+  let texto = prompt("Indique un chiste");
   if (texto === null) {
     break;
   }

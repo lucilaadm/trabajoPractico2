@@ -16,11 +16,11 @@
 */
 for (let i = 1; i <= 500; i++) {
     if (i % 4 === 0)
-    document.write(i + ` (Múltiplo de 4) <br />`);
+    console.log(i + ` (Múltiplo de 4)`);
     else if (i % 9 === 0) {
-    document.write(i + ` (Múltiplo de 9) <br />`);
+    console.log(i + ` (Múltiplo de 9)`);
     }
     else{
-      document.write(i + <br />);
+      console.log(i);
     }
   }
